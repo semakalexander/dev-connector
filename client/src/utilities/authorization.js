@@ -15,6 +15,8 @@ const removeInfo = () => {
   removeUserInfo();
 };
 
+// TODO set token to cookies
+
 export {
   setToken,
   getToken,

@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
 
-import user from './user';
+import boilerplate from './boilerplate';
 
 const reducers = combineReducers({
-  user
+  boilerplate
 });
 
 export default reducers;

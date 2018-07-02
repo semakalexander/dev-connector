@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { signIn } from '../requests/user';
+import { signIn } from '../redux/actions/account';
 
 class SignIn extends Component {
   state = {
@@ -19,7 +19,7 @@ class SignIn extends Component {
       state: { email, password }
     } = this;
 
-    signIn({ email, password });
+    this.props.dispatch(signIn({ email, password }));
   };
 
   render() {
@@ -70,4 +70,4 @@ class SignIn extends Component {
   }
 }
 
-export default SignIn;
+export default connect()(SignIn);

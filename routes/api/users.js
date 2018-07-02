@@ -12,11 +12,6 @@ const validateLoginInput = require('../../validation/login');
 
 const router = express.Router();
 
-// @route  api/users/test
-// @desc   tests users route
-// @access public
-router.get('/test', (req, res) => res.json({ msg: 'users' }));
-
 // @route  api/users/register
 // @desc   register user
 // @access public
